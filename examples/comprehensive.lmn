@@ -1,0 +1,57 @@
+# Complex example demonstrating all operators
+
+GENESIS {
+  PUSH "origin"
+  PUSH "center"
+  WITNESS
+}
+
+ESTABLISHMENT {
+  BIND "foundation" "laid"
+  BIND "structure" "forming"
+  WITNESS
+}
+
+GROWTH {
+  SATURATE {
+    PUSH "expansion"
+    GATE depth < 7
+  }
+  WITNESS
+}
+
+REORGANIZATION {
+  INVERT
+  WITNESS
+}
+
+CONDITIONAL {
+  GATE bound foundation
+  PUSH "verified"
+  WITNESS
+}
+
+ITERATION {
+  SATURATE {
+    GATE unbound complete
+    PUSH "process"
+    GATE depth < 10
+  }
+}
+
+MARKING {
+  BIND "complete" "true"
+  WITNESS
+}
+
+DISSOLUTION {
+  RELEASE "foundation"
+  RELEASE "structure"
+  WITNESS
+}
+
+TERMINUS {
+  PUSH "end"
+  WITNESS
+  HALT
+}

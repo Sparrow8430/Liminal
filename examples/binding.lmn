@@ -1,0 +1,17 @@
+ESTABLISH {
+  PUSH "key"
+  PUSH "value"
+  BIND "association" "formed"
+}
+
+VERIFY {
+  GATE bound association
+  WITNESS
+}
+
+DISSOLVE {
+  RELEASE "association"
+  GATE unbound association
+  WITNESS
+  HALT
+}

@@ -1,0 +1,15 @@
+BEGIN {
+  PUSH "above"
+  PUSH "below"
+  WITNESS
+}
+
+TRANSFORM {
+  INVERT
+  WITNESS
+}
+
+RESOLVE {
+  BIND "above" "below"
+  HALT
+}

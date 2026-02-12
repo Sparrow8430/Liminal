@@ -1,0 +1,15 @@
+SEED {
+  PUSH "core"
+}
+
+EXPAND {
+  SATURATE {
+    PUSH "layer"
+    GATE depth < 5
+  }
+}
+
+CLOSE {
+  WITNESS
+  HALT
+}

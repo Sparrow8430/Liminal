@@ -1,0 +1,23 @@
+INITIALIZE {
+  PUSH "seed"
+}
+
+CONVERGE {
+  SATURATE {
+    GATE depth < 3
+    PUSH "growth"
+  }
+  WITNESS
+}
+
+STABILIZE {
+  SATURATE {
+    GATE unbound marker
+    BIND "marker" "stable"
+  }
+  WITNESS
+}
+
+COMPLETE {
+  HALT
+}
